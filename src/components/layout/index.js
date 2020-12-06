@@ -3,10 +3,11 @@ import { ThemeProvider, useTheme } from '@material-ui/core/styles'
 import React from 'react'
 import useStyle from './style'
 import theme from './theme'
+import './style.css'
 const MainLayout = props => {
   const classes = useStyle()
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id='root'>
       <CssBaseline />
       <AppBar elevation={0} color='primary'>
         <Toolbar>
